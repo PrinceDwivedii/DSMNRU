@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <ImageView
+        android:id="@+id/Logo_image"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/logo"
+        android:transitionName="Splash_image"/>
+
+    <TextView
+        android:id="@+id/l_textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"
+        android:text="DR Shakuntala Misra National Rehabilitation university"
+        app:fontFamily="@font/bungee"
+        android:transitionName="Splash_text"
+        android:gravity="center"
+        android:textColor="#000"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/l_textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Sign In To continue"
+        android:textColor="#000"
+        android:textSize="20dp"
+        android:transitionName="Splash_text1"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="#000"
+            android:id="@+id/username"
+            android:hint="Username"
+            android:transitionName="Splash_username"
+
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"/>
+
+
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="#000"
+            android:id="@+id/password"
+            android:hint="Password"
+            app:passwordToggleEnabled="true"
+            android:transitionName="Splash_Password"
+
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"/>
+
+
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:text="forget password"
+            android:layout_gravity="right"
+            android:elevation="0dp"
+            android:layout_margin="5dp"/>
+
+
+        <Button
+            android:id="@+id/Login_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/button_radius"
+            android:text="GO"
+            android:onClick="call_profile"
+            android:textColor="#fff"
+            android:transitionName="Splash_Gobtn" />
+
+        <Button
+            android:id="@+id/signup_screen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_margin="5dp"
+            android:background="#00000000"
+            android:elevation="0dp"
+            android:padding="5dp"
+            android:text="nw user? sign in"
+            android:transitionName="Splash_lgbtn"
+
+            />
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
